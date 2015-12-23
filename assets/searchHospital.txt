@@ -1,0 +1,8 @@
+{"resultcode":"1",
+	"currentpage":"1",
+	"total":"1",
+	"rowsofpage":"1",
+	"result":[{"HospitalID":"1","HospitalName":"兴城市医院","HospitalLevel":"三级甲等","HospitalBriefly":"兴城市人民医院始建于1948年，座落于兴城市中心， 现己发展成为一所技术精良、设备先进、功能齐全，集医疗、急救、预防保健、教学、社区服务为一体的三级综合性医院","HospitalImgUrl":"asda"},
+	         {"HospitalID":"1","HospitalName":"锦州市医院","HospitalLevel":"三级甲等","HospitalBriefly":"兴城市人民医院始建于1948年，座落于兴城市中心， 现己发展成为一所技术精良、设备先进、功能齐全，集医疗、急救、预防保健、教学、社区服务为一体的三级综合性医院","HospitalImgUrl":"asda"}
+	         ]
+	}

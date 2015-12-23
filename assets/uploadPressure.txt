@@ -1,0 +1,24 @@
+{
+    "resultcode": "1",
+    "currentpage": "0",
+    "total": "0",
+    "rowsofapage": "0",
+    "result": [
+       		 { 
+	       		"auto_id": "26",
+	            "UserID": "13591995551",
+	            "QuestionContent": "太可怜了",
+	            "QuestionTime": "2015/8/16 20:21:05",
+	            "DoctorType": "1",
+	            "IsShared": "1",
+	            "Reply": [
+	                {
+	                    "auto_id": "6",
+	                    "ReplyPeople": "左凯",
+	                    "Content": "来找我吧，我给你看！",
+	                    "Time": "2015/8/30 13:49:19"
+	                }
+	            ]
+	        }
+    ]
+ }

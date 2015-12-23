@@ -1,0 +1,7 @@
+{"resultcode":"1",
+	"currentpage":"1",
+	"total":"1",
+	"rowsofpage":"1",
+	"result":[{"HospitalName":"兴城市医院","DoctorName":"Aeric","DoctorClass":"胃肠科","AppointTime":"1","SubmitTime":"2012-11-2"}
+	         ]
+	}

@@ -1,0 +1,7 @@
+{"resultcode":"0",
+	"currentpage":"1",
+	"total":"1",
+	"rowsofpage":"1",
+	"result":[{"AdID":"1","AdTitle":"【福利】  10月1 国庆送好礼","PublishTime":"2015-10-12","AdBriefly":"会员中心会员中心会员中心会员中心会员中心会员中心会员中心会员中心会员中心会员中心会员中心会员中心会员中心","AdImgUrl":"asda","brieflyImgUrl":"..//"}
+	         ]
+	}

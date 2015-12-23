@@ -1,0 +1,23 @@
+{   "resultcode":"1",
+	"result":[
+			{"name":"Aeric","age":"11","classabb":["11","22","33"]},
+			{"name":"lzq","age":"12","classabb":["11","22","33"]}
+		]
+}
+
+{
+            "auto_id": "26",
+            "UserID": "13591995551",
+            "QuestionContent": "太可怜了",
+            "QuestionTime": "2015/8/16 20:21:05",
+            "DoctorType": "1",
+            "IsShared": "1",
+            "Reply": [
+                {
+                    "auto_id": "6",
+                    "ReplyPeople": "左凯",
+                    "Content": "来找我吧我给你看！",
+                    "Time": "2015/8/3013:49:19"
+                }
+            ]
+        }

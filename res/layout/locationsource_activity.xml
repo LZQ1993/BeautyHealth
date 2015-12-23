@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".PersonHealth.BloodPressure.Activity.BloodPressureOperGuideActivity" >
+
+    <!-- 添加导航 -->
+
+    <include layout="@layout/activity_nav_tabbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <fragment
+                android:id="@+id/pd_tabbar"
+                android:name="com.beautyhealth.Infrastructure.CWComponent.TabBarFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/fragment_container"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#15abd0"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/drivebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="#15abd0"
+                    android:drawableTop="@drawable/drive"
+                    android:text="驾车"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/walkbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="#15abd0"
+                    android:drawableTop="@drawable/walk"
+                    android:text="步行"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/busbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="#15abd0"
+                    android:drawableTop="@drawable/bus"
+                    android:text="公交"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <com.amap.api.maps2d.MapView
+                    android:id="@+id/map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:background="#c3c3c3"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/familynumbreoneButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="#c3c3c3"
+                    android:text="@string/familynumbreone" />
+
+                <View
+                    android:layout_width="2dip"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="#8B8B83" />
+
+                <Button
+                    android:id="@+id/familynumbretwoButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="#c3c3c3"
+                    android:text="@string/familynumbretwo" />
+
+                <View
+                    android:layout_width="2dip"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="#8B8B83" />
+
+                <Button
+                    android:id="@+id/familynumbrethreeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="#c3c3c3"
+                    android:text="@string/familynumbrethree" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

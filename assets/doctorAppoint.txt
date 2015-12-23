@@ -1,0 +1,8 @@
+{"resultcode":"1",
+	"currentpage":"1",
+	"total":"1",
+	"rowsofpage":"1",
+	"result":[
+				{"result":"1","tip":"上传成功"}
+			]
+}

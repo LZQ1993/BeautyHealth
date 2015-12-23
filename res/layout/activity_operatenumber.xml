@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/operatebackground"
+    android:orientation="vertical"
+    tools:context=".UserCenter.Activity.FamilyNumberActivity" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/activity_nav_tabbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/btn_updateNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_sg_main_shape"
+            android:src="@drawable/updatefamilynumber" />
+
+        <ImageButton
+            android:id="@+id/btn_sendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_sg_main_shape"
+            android:src="@drawable/sendmessage" />
+
+        <ImageButton
+            android:id="@+id/btn_callPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_sg_main_shape"
+            android:src="@drawable/callphone" />
+    </LinearLayout>
+
+</LinearLayout>

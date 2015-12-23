@@ -1,0 +1,7 @@
+{"resultcode":"1",
+	"currentpage":"1",
+	"total":"1",
+	"rowsofpage":"1",
+	"result":[{"DoctorName":"Aeric","BriefContent":"辽工大","PhotoUrl":"http://www.xqtian.com/course/Files/Upload/images/06578fac-7d2e-4df9-90cb-59f491773466.jpg"},
+	{"DoctorName":"lzq","BriefContent":"辽工大","PhotoUrl":"http://www.xqtian.com/course/Files/Upload/images/06578fac-7d2e-4df9-90cb-59f491773466.jpg"}]
+	}

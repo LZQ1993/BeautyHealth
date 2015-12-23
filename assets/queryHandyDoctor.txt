@@ -1,0 +1,9 @@
+{"resultcode":"1",
+	"currentpage":"1",
+	"total":"1",
+	"rowsofpage":"1",
+	"result":[
+       {"DoctorID":"1","DoctorName":"lzq","DoctorGender":"男","Conclusion":"正常","DoctorTel":"13591990221","DoctorDescription":"李志强，男，主任医师，副教授，毕业于辽宁工程技术大学","DoctorImgUrl":"1322123","ClassName":"耳鼻喉科","MainCute":"神经外科"},
+        {"DoctorID":"2","DoctorName":"Aeric","DoctorGender":"男","Conclusion":"正常","DoctorTel":"13591990221","DoctorDescription":"李志强，男，主任医师，副教授，毕业于辽宁工程技术大学","DoctorImgUrl":"1322123","ClassName":"外科","MainCute":"胃肠科"}
+        ]
+  }

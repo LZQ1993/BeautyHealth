@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="lib" path="G:/repository/BeautyHealthProject/BeautyHealthCode/BeautyHealth/libs/achartengine-1.1.0.jar"/>
+	<classpathentry kind="lib" path="G:/repository/BeautyHealthProject/BeautyHealthCode/BeautyHealth/libs/AMap_android_API_2DMap_Lib_V2.7.0_20151124.jar"/>
+	<classpathentry kind="lib" path="G:/repository/BeautyHealthProject/BeautyHealthCode/BeautyHealth/libs/AMap_Location_v2.0.0_20151117.jar"/>
+	<classpathentry kind="lib" path="G:/repository/BeautyHealthProject/BeautyHealthCode/BeautyHealth/libs/AMap_Services_V2.7.0_20151125.jar"/>
+	<classpathentry kind="lib" path="G:/repository/BeautyHealthProject/BeautyHealthCode/BeautyHealth/libs/android-async-http-1.4.4.jar"/>
+	<classpathentry kind="lib" path="G:/repository/BeautyHealthProject/BeautyHealthCode/BeautyHealth/libs/android-support-v4.jar"/>
+	<classpathentry kind="lib" path="G:/repository/BeautyHealthProject/BeautyHealthCode/BeautyHealth/libs/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="G:/repository/BeautyHealthProject/BeautyHealthCode/BeautyHealth/libs/MapApi.jar"/>
+	<classpathentry kind="lib" path="G:/repository/BeautyHealthProject/BeautyHealthCode/BeautyHealth/libs/xcl-charts.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

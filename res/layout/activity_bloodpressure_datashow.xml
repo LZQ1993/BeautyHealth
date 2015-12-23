@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dip"
+    android:background="#282b2c"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/pressure_btn_left"
+        android:layout_width="0dip"
+        android:layout_height="40dip"
+        android:layout_weight="1"
+        android:background="#282b2c"
+        android:gravity="center"
+        android:onClick="LeftButtonClick"
+        android:singleLine="true"
+        android:text="&lt;返回"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/pressure_tv_title"
+        android:layout_width="0dip"
+        android:layout_height="40dip"
+        android:layout_weight="3"
+        android:background="#282b2c"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="血压走势图"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/pressure_btn_right"
+        android:layout_width="0dip"
+        android:layout_height="40dip"
+        android:layout_weight="1"
+        android:background="#282b2c"
+        android:gravity="center"
+        android:onClick="RightButtonClick"
+        android:singleLine="true"
+        android:text="查询"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.beautyhealth"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 发短信权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!-- 使用网络功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- 蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <!-- 授予程序使用摄像头的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 授予程序使用高德地图的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:name="com.beautyhealth.Infrastructure.CWComponent.App"
+        android:icon="@drawable/companyicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="00b757207336c99cc1e7ef8c29b7ea11" />
+
+        <activity
+            android:name="com.beautyhealth.StartupActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 首页 -->
+        <activity
+            android:name="com.beautyhealth.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.IntroActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.Infrastructure.CWComponent.TabBarFragment"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 个人健康 -->
+        <activity
+            android:name="com.beautyhealth.PersonHealth.PersonHealthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 个人健康模块     血压 -->
+        <activity
+            android:name="com.beautyhealth.PersonHealth.BloodPressureMeasure.Activity.BloodPressureOperGuideActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.PersonHealth.BloodPressureMeasure.Activity.BloodPressureMeasureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.PersonHealth.BloodPressureMeasure.Activity.BloodPressureDataShowActivity"
+            android:screenOrientation="landscape" />
+        <!-- 个人健康模块     血糖 -->
+        <activity
+            android:name="com.beautyhealth.PersonHealth.BloodSugarMearsure.Activity.BloodSugarMeasureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.PersonHealth.BloodSugarMearsure.Activity.BloodSugarOperGuideActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.PersonHealth.BloodSugarMearsure.Activity.BloodSugarDatashowActivity"
+            android:screenOrientation="landscape" />
+        <!-- 个人健康模块  活动能力 -->
+        <activity
+            android:name="com.beautyhealth.PersonHealth.AbilityFunction.Activity.AlarmActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.beautyhealth.PersonHealth.AbilityFunction.Activity.SetAlarmActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.beautyhealth.PersonHealth.AbilityFunction.Activity.DeskClockMainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.beautyhealth.PersonHealth.AbilityFunction.Activity.MusicList"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人健康模块  计步器服务 -->
+        <service android:name="com.beautyhealth.PersonHealth.Pedometer.StepService" />
+
+        <activity
+            android:name="com.beautyhealth.PersonHealth.Pedometer.PedometerDataShowActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.beautyhealth.PersonHealth.Pedometer.PedometerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 个人健康模块    我的位置 -->
+        <activity
+            android:name="com.beautyhealth.PersonHealth.MyLocation.Activity.RouteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.PersonHealth.MyLocation.Activity.RouteStepShowTest"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.PersonHealth.MyLocation.Activity.serviceManager"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 为了消去加上android:priority="1000"后出现的警告信息，可以设置android:exported属性，指示该服务是否能够被其他应用程序组件调用或跟它交互 -->
+        <!-- 为防止Service被系统回收，可以通过提高优先级解决，1000是最高优先级，数字越小，优先级越低 -->
+        <!--
+        <service
+            android:name="com.beautyhealth.PersonHealth.MyLocation.Activity.GDGpsService"
+            android:exported="false" >
+            <intent-filter android:priority="1000" >
+            </intent-filter>
+        </service>
+        -->
+        <service android:name="com.beautyhealth.PersonHealth.MyLocation.Activity.GDGpsService" 
+ 			android:process="system">
+            <intent-filter android:priority="1000"></intent-filter>
+        </service>
+        <service android:name="com.beautyhealth.PersonHealth.MyLocation.Activity.LocationService" 
+ 			android:process="system">
+        </service>
+        
+  <!--广播注册-->  
+     <receiver android:name="com.beautyhealth.PersonHealth.MyLocation.Activity.GpsLocationReceiver"
+                android:process=":remote">
+       <intent-filter> 
+        <action android:name= "com.chinawit.locationuploading" /> 
+       </intent-filter> 
+     </receiver> 
+        <!-- 个人健康模块     体检报告 -->
+        <activity
+            android:name="com.beautyhealth.PersonHealth.MedicalReport.MedicalReportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 安全监护模块 -->
+        <activity
+            android:name="com.beautyhealth.SafeGuardianship.SafeGuardianshipActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 安全监护模块     血压 -->
+        <activity
+            android:name="com.beautyhealth.SafeGuardianship.BloodPressureGuardianship.Activity.BloodPressureGuardianshipActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.beautyhealth.SafeGuardianship.BloodPressureGuardianship.Activity.ChartSample" />
+
+        <!-- 活动 监测 -->
+        <activity
+            android:name="com.beautyhealth.SafeGuardianship.ActionGuardianship.SafeActionActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <!-- 安全监护模块     血糖 -->
+        <activity
+            android:name="com.beautyhealth.SafeGuardianship.BooldSugarGuardianship.Activity.BloodSugarGuardianshipActivity"
+            android:screenOrientation="landscape" />
+        <!-- 安全监护模块  位置监护 -->
+        <activity
+            android:name="com.beautyhealth.SafeGuardianship.LocationGuardianship.Activity.TimeLocationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.SafeGuardianship.LocationGuardianship.Activity.LocationPathActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- 用户中心 -->
+        <activity
+            android:name="com.beautyhealth.UserCenter.Activity.AddFamilyNumberActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.UserCenter.Activity.FamilyNumberActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.UserCenter.Activity.OperateNumberActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.UserCenter.Activity.SendMessageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.UserCenter.MeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.UserCenter.Activity.UserFeedBackActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.UserCenter.Activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.beautyhealth.UserCenter.Activity.PersonalInformationManagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.beautyhealth.UserCenter.Activity.UpdatePasswordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.UserCenter.Activity.MessageBindingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.UserCenter.Activity.UserManagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.beautyhealth.UserCenter.Activity.AutoLoginService" />
+
+        <!-- 私人医生 -->
+        <activity
+            android:name="com.beautyhealth.PrivateDoctors.PrivateDoctorsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.PrivateDoctors.Activity.SearchHospitalActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.PrivateDoctors.Activity.AppointmentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.PrivateDoctors.Activity.DoctorBrieflyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.PrivateDoctors.Activity.MedicalConsultActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.PrivateDoctors.Activity.PDMCpicShowActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.PrivateDoctors.Activity.AddIssueActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.PrivateDoctors.Activity.MyIssueActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.PrivateDoctors.Activity.DoctorAllInfoAcitivty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.PrivateDoctors.Activity.MyAppointInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.PrivateDoctors.Activity.AppointAcitivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.beautyhealth.PrivateDoctors.Activity.AlbumActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.beautyhealth.PrivateDoctors.Activity.ImageFile"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.beautyhealth.PrivateDoctors.Activity.ShowAllPhoto"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.beautyhealth.PrivateDoctors.Activity.GalleryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 会员中心 -->
+        <activity
+            android:name="com.beautyhealth.MembersCenter.MembersCenterAcitivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.beautyhealth.MembersCenter.FavorableInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 设置 -->
+        <activity
+            android:name="com.beautyhealth.Setting.CallNumSetting.CallNumberListViewAcitity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.beautyhealth.Setting.GPSSetting.SettingGPSActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+    </application>
+
+</manifest>
